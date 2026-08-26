@@ -1,0 +1,153 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+}
+
+.hero-section {
+    padding: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers h1 + h2 vertically */
+    align-items: center;     /* Centers h1 + h2 horizontally */
+
+    background-image: url('img/torshov.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.title-1 {
+    background-color: #436f8c;
+    color: white;
+
+    width: 250px;
+    padding: 8px 15px;
+    margin: 0 0 10px;
+
+    text-align: center;      /* Centers text inside blue box */
+}
+
+.title-2 {
+    background-color: #1f2e4d;
+    color: white;
+
+    width: 500px;
+    padding: 8px 15px;
+    margin: 0;
+
+    text-align: center;      /* Centers text inside dark blue box */
+}
+
+.mid-section {
+    background-color: #f1f9ec;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0;         /* Adds breathing room to top/bottom of mid-section */
+}
+
+.features {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;         /* Allows boxes to wrap on smaller screens */
+}
+
+.mid {
+    width: 100px;
+    height: 100px;           /* Ensures a perfect circle if image isn't perfectly square */
+    object-fit: cover;       /* Prevents the circular image from squishing */
+    border-radius: 50%;
+}
+
+.box-1 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.box-2, .box-3, .box-4 {
+    border: none; /* Added color to your border */
+    width: 300px;
+    height: auto;            /* Changed from 300px to auto so text won't overflow the border */
+    min-height: 300px;       /* Gives it a base height instead of a rigid fixed limit */
+    
+    display: flex;           /* Changed from inline-block to flex */
+    flex-direction: column;  /* Stacks content inside vertically */
+    align-items: center;     /* Centers images, headers, and text horizontally */
+    text-align: center;      /* Centers text alignment inside elements */
+    
+    padding: 20px 15px;      /* Adds inner spacing so text doesn't touch borders */
+    margin: 25px 50px;       /* Reduced horizontal margin slightly so they fit next to each other */
+}
+
+/* Specific styling for the h3 headings inside the feature boxes */
+.box-2 h3, .box-4 h3 {
+    width: 90%;             /* Stretches background side-to-side inside the box */ /* Matches your hero blue theme; change color as desired */          /* Makes text readable against dark background */
+    margin: 0px;   /* Space above and below heading */
+    padding: 8px 0;          /* Space inside background box */
+}
+.box-3 h3{
+    width: 80%;             /* Stretches background side-to-side inside the box */ /* Matches your hero blue theme; change color as desired */          /* Makes text readable against dark background */
+    margin: 0px;   /* Space above and below heading */
+    padding: 8px 0; 
+}
+h3:hover{
+    color: rgb(124, 122, 122);
+    cursor: pointer;
+}
+.box-2 p, .box-3 p, .box-4 p{
+    width:81%;
+}
+.card{
+    border: none;
+    width: 400px;
+    height: 240px;
+    display: flex;
+    margin: 70px 500px;
+    background-color: #a1d6d7;
+    color: #001b28;
+    border-radius: 10px;
+}
+.card img{
+    width: 150px;
+    border-radius: 10px;
+}
+.text-box{
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 13px;
+}
+.title{
+    font-size: 13px;
+}
+.para{
+    width: 170px;
+    text-align: center;
+}
+.author{
+    font-size: 10px;
+}
+.author-img{
+    margin: 20px 20px;
+}
+.last-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
